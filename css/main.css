@@ -394,8 +394,16 @@ button {
 }
 
 @media screen and (max-width: 992px){
-  .nav-header{
+  .knockout{
+
+    background-color: #607084;
+
   }
+  .btn{
+
+    background-color: #607084;
+  }
+
 
 }
 @media screen and (max-width: 480px) {
