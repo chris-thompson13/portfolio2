@@ -1,0 +1,460 @@
+* {
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+div {}
+
+.menu-toggle {
+  position: relative;
+  display: inline;
+  width: 30px;
+
+  height: 26px;
+  background: transparent;
+  float: right;
+  vertical-align: middle;
+  top: 10px;
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+  color: #1c2174;
+  font-size: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.menu-toggle:before, .menu-toggle:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: currentColor;
+  transform: translate(-50%, -50%);
+  transition: transform 0.25s ease-in-out;
+}
+
+button:hover {
+  color: #2b32b2;
+}
+
+button.is-active {
+  border-color: transparent;
+}
+
+button.is-active:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+button.is-active:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.menu-toggle {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 26px;
+  background: transparent;
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+  color: #1c2174;
+  font-size: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.menu-toggle:before, .menu-toggle:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: currentColor;
+  transform: translate(-50%, -50%);
+  transition: transform 0.25s ease-in-out;
+}
+
+button:hover {
+  color: #2b32b2;
+}
+
+button.is-active {
+  border-color: transparent;
+}
+
+button.is-active:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+button.is-active:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.body {
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.headDiv {
+  height: 100px;
+  width: 1000px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.0005);
+  margin: 0 auto;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(0);
+    -webkit-filter: blur(0px);
+    /* Safari */
+    filter: blur(0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(150px);
+    margin: auto;
+    -webkit-filter: blur(1px);
+    /* Safari */
+    filter: blur(0px);
+    opacity: 1.0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+    -webkit-filter: blur(0px);
+    /* Safari */
+    filter: blur(0px);
+  }
+}
+
+@keyframes blur {
+  0% {
+    -webkit-filter: blur(0px);
+    /* Safari */
+    filter: blur(0px);
+  }
+  50% {
+    -webkit-filter: blur(50px);
+    /* Safari */
+    filter: blur(50px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    /* Safari */
+    filter: blur(0px);
+  }
+}
+
+.container {
+  top: 200px;
+  height: 600px;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.box {
+  height: 400px;
+}
+
+#main {}
+
+.mediumImage {
+  width: 100%;
+  -webkit-filter: contrast(200%);
+  /* Safari */
+  filter: contrast(200%);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+.box {
+  transform: translateY(-250px);
+  width: 100%;
+}
+
+.nav-header {
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  height: 100px;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.main-header {
+  height: 100px;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.centerLogo {
+  animation: drop 12s ease infinite;
+  margin: auto;
+  position: static;
+  background-color: #2f3a4c;
+  opacity: 0.9;
+  border-radius: 10%;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: lightgray;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+}
+
+.centerMargin {
+  margin: auto;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+}
+
+.knockout {
+  background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
+  animation: blur 12s ease infinite;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  font-size: 100px;
+  font-family: arial, helvetica;
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.footer1 {
+  transform: translateY(250px);
+  background-color: #555;
+  padding: 50px;
+  text-align: center;
+  vertical-align: middle;
+  transform: translate(-20px);
+}
+
+.code {
+  text-align: center;
+}
+
+.text {
+  margin: 0 auto;
+  max-width: 640px;
+  width: 94%;
+}
+
+.text h1 {
+  margin-top: 0;
+}
+
+.right {
+  float: right;
+  vertical-align: top;
+  width: 200px;
+}
+
+.logo {
+  height: 250px;
+  width: 250px;
+}
+
+.btn-group {
+  margin: 0 10px;
+  padding: 10px
+}
+
+.btn {
+  color: rgb(65, 80, 104);
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  text-decoration: none;
+  font-family: verdana;
+  padding: 10px;
+  border: 0px solid #999999;
+  border-radius: 15px;
+  -webkit-transition: border .5s ease-in-out;
+  /* Safari 3.1 to 6.0 */
+  transition: border .5s ease-in-out;
+}
+
+.btn:hover {
+  border: 15px solid rgb(65, 80, 104);
+  border-radius: 300px;
+}
+@media screen and (max-width: 768px){
+.nav-header{
+}
+
+}
+
+.VideoContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 992px){
+  .nav-header{
+  }
+
+}
+@media screen and (max-width: 480px) {
+  .btn {
+    display: none;
+  }
+  .knockout {
+    font-size: 100%;
+  }
+  .menu-toggle {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.btn:active {
+  border: 15px solid rgb(65, 80, 104);
+  border-radius: 3px;
+}
+
+#container {
+  top: 120px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  position: relative;
+}
+
+#quote {
+  font-size: 26px;
+  line-height: 44px;
+  color: #dedede;
+  text-align: center;
+  opacity: 0;
+}
+
+#emphasis {
+  font-size: 42px;
+  line-height: 45px;
+  color: #f1f1f1;
+  text-align: center;
+  opacity: 0;
+  padding-top: 10px;
+}
+.btn2 {
+    width: 300px;
+    height: 100px;
+    font-size: 50px;
+    margin: auto;
+    line-height: 100px;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    border: solid 1px black;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    color: #666;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    z-index: 1;
+}
+
+.btn2:after,
+.btn2:before {
+    display: block;
+    background: #333;
+    width: 0;
+    height: 100px;
+    content: "";
+    position: absolute;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+    z-index: -1;
+}
+
+.btn2:after {
+    bottom: 0px;
+    left: 0px;
+    width: 50%;
+}
+
+.btn2:before {
+    top: 0px;
+    right: 0px;
+}
+
+.btn2:hover:after,
+.btn2:hover:before{
+  width: 100%;
+}
